@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="664.0" prefWidth="1036.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.Controller">
+    <children>
+        <HBox fx:id="backgroundMain" alignment="CENTER" depthTest="DISABLE" prefHeight="671.0" prefWidth="1036.0" style="-fx-background-image: url('file:../../res/dino-wp.jpg'); -fx-background-size: cover;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <VBox alignment="CENTER" layoutX="377.0" layoutY="123.0" prefHeight="584.0" prefWidth="577.0" spacing="20.0" style="-fx-background-color: rgba(0, 204, 71, 0); -fx-background-radius: 30; -fx-border-radius: 30; -fx-background-insets: 100 0 100 0;">
+                    <children>
+                        <Label layoutX="37.0" layoutY="129.0" style="-fx-border-color: #ff8c00; -fx-border-radius: 20; -fx-background-insets: 20; -fx-padding: 20; -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.6) , 5,0,0,2);" text="Elementary Quizzes" textOverrun="CLIP">
+                            <font>
+                                <Font name="Comic Sans MS Bold" size="41.0" />
+                            </font>
+                            <textFill>
+                                <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+                                    <stops>
+                                        <Stop color="#fcffab" />
+                                        <Stop color="#ffc38b" offset="1.0" />
+                                    </stops>
+                                </LinearGradient>
+                            </textFill>
+                        </Label>
+                        <Button fx:id="easyButton" mnemonicParsing="false" onAction="#goToEasy" prefHeight="85.0" prefWidth="253.0" style="-fx-background-radius: 20; -fx-background-insets: 3; -fx-background-color: linear-gradient(from 0% 100% to 0% 0%, #ffc800, #ffe482); -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.4) , 5,0,0,3);" stylesheets="@style.css">
+                            <font>
+                                <Font name="Comic Sans MS" size="18.0" />
+                            </font>
+                            <graphic>
+                                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                                    <children>
+                                        <Pane prefHeight="73.0" prefWidth="68.0" style="-fx-background-image: url('file:../../res/assets/kangaroo.png'); -fx-background-size: cover;" />
+                                        <Label text="Start Quiz">
+                                            <font>
+                                                <Font name="Comic Sans MS" size="24.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                            </graphic>
+                        </Button>
+                    </children></VBox>
+            </children>
+            <padding>
+                <Insets bottom="40.0" top="40.0" />
+            </padding></HBox>
+    </children>
+</AnchorPane>

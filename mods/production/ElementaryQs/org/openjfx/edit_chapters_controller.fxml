@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="664.0" prefWidth="1036.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.EditChaptersController">
+    <children>
+      <StackPane fx:id="pane" prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+              <FlowPane alignment="CENTER" columnHalignment="CENTER" hgap="20.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="200.0" vgap="10.0">
+                  <children>
+                      <Label text="SELECT A CHAPTER">
+                          <font>
+                              <Font name="System Bold" size="21.0" />
+                          </font>
+                      </Label>
+                      <JFXListView fx:id="chaptersEditList" onMouseClicked="#chapterEditClicked" prefHeight="403.0" prefWidth="775.0" />
+                  <HBox alignment="CENTER_RIGHT" prefHeight="43.0" prefWidth="775.0" spacing="10.0">
+                     <children>
+                        <JFXButton fx:id="addChapter" buttonType="RAISED" layoutX="500.0" layoutY="262.0" onAction="#addNewChapter" style="-fx-background-color: #42a5f5;" text="ADD CHAPTER" textFill="WHITE" />
+                        <JFXButton fx:id="deleteChapter" buttonType="RAISED" disable="true" layoutX="500.0" layoutY="262.0" onAction="#deleteChapter" style="-fx-background-color: #f44336;" text="DELETE CHAPTER" textFill="WHITE" />
+                     </children>
+                  </HBox>
+                  </children>
+                  <padding>
+                      <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+                  </padding>
+              </FlowPane>
+         </children></StackPane>
+    <JFXButton onAction="#homeBtn" style="-fx-background-color: #42a5f5;" text="BACK" textFill="WHITE" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+        <font>
+            <Font name="Arial" size="14.0" />
+        </font>
+    </JFXButton>
+    </children>
+</AnchorPane>

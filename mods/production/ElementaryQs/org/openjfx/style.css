@@ -1,0 +1,24 @@
+Button:hover {
+    -fx-scale-y: 1.05;
+    -fx-scale-x: 1.05;
+}
+
+Button:pressed {
+    -fx-scale-y: 0.95;
+    -fx-scale-x: 0.95;
+}
+
+.jfx-snackbar-content:info-toast{
+    -fx-background-color: WHITE;
+    -fx-background-radius: 5;
+}
+
+.jfx-snackbar-content:error-toast{
+    -fx-background-color: #ff5722;
+    -fx-background-radius: 5;
+}
+
+.jfx-snackbar-content:success-toast{
+    -fx-background-color: #4caf50;
+    -fx-background-radius: 5;
+}
